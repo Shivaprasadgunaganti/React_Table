@@ -30,5 +30,6 @@ export const Heading1=()=>{
              <td>5R</td>
              <td>HYD</td>
         </tr>
+                
     </table>
 }
