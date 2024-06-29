@@ -10,7 +10,8 @@ class TodoComponent extends Component {
         return (
         
             <>{this.state.todo.map((eachtodo)=>{
-                return <h2>{eachtodo}</h2>
+                return  <h3>{eachtodo}</h3>  
+        
             })}
             </>
         )
@@ -18,4 +19,4 @@ class TodoComponent extends Component {
     
 }
 
-export default TodoComponent
+export default TodoComponent    
