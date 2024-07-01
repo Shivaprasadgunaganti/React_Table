@@ -20,7 +20,7 @@ class TodoComponent extends Component {
     })
   }
   todoDeleteHandler = (index) => {
-    let newTodo=this.state.todo.filter((eachtodo,i) =>(index != i))
+    let newTodo=this.state.todo.filter((eachtodo,i) =>(index !== i))
     
     this.setState({
       todo:newTodo
