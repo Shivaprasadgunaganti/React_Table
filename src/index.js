@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import {Add} from './App'
-import { Fruits } from './App';
-import { Teams } from './App';
+import App from './App';
+
 import reportWebVitals from './reportWebVitals';
 import ButtonComponent1 from './components/Table/buttonComponet/buttonComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Add/>
+    <App />
     {/* <App /> */}
-    <Fruits/>
-    <Teams/>
-    <ButtonComponent1/>
+ 
   </React.StrictMode>
 );
 
