@@ -21,7 +21,11 @@ class TodoComponent extends Component {
     })
   }
   todoDeleteHandler = (index) => {
+
+    let newTodo=this.state.todo.filter((eachtodo,i) =>(index !== i))
+=======
     let newTodo=this.state.todo.filter((eachtodo,i) =>(index != i))
+
     
     this.setState({
       todo:newTodo
@@ -54,7 +58,7 @@ class TodoComponent extends Component {
 }
 
 export default TodoComponent;
-=======
+
 // import { Component } from "react"
 
 // class TodoComponent extends Component {
@@ -76,28 +80,45 @@ export default TodoComponent;
 // }
 
 // export default TodoComponent  
-import ButtonComponent1 from "../Table/buttonComponet/buttonComponent";
+// import ButtonComponent1 from "../Table/buttonComponet/buttonComponent";
 
-const { Component } = require("react");
+// const { Component } = require("react");
 
 
-class Todocompoment extends Component {
-    state={
-        todos:['wake up at 7:00 am','class at 9:00 am']
-    }
-    render() {
-        return (
-            <>
-            {
+// class Todocompoment extends Component {
+//     state={
+//         todos:['wake up at 7:00 am','class at 9:00 am']
+//     }
+//     render() {
+//         return (
+//             <>
+//             {
             
-                this.state.todos.map((eachtodo)=>{
-                   return <h2>{eachtodo}</h2>
-                })};
-               <ButtonComponent1 text={'add todo'}/>
-            </>
-        )
-    }
 
+
+//                 this.state.todos.map((eachtodo)=>{
+//                    return <h2>{eachtodo}</h2>
+//                 })};
+//                <ButtonComponent1 text={'add todo'}/>
+//             </>
+//         )
+//     }
+
+// }
+// export default Todocompoment
+
+//                 this.state.todos.map((eachtodo)=>{
+//                    return <h2>{eachtodo}</h2>
+//                 })};
+//                <ButtonComponent1 text={'add todo'}/>
+//             </>
+//         )
+//     }
+
+// }
+// export default Todocompoment
+=======
 }
 export default Todocompoment
+
 
