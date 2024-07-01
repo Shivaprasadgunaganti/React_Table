@@ -1,5 +1,4 @@
 
-
 import { Component } from "react";
 import ButtonComponent1 from "../Table/buttonComponet/buttonComponent";
 class TodoComponent extends Component {
@@ -22,7 +21,11 @@ class TodoComponent extends Component {
     })
   }
   todoDeleteHandler = (index) => {
+
     let newTodo=this.state.todo.filter((eachtodo,i) =>(index !== i))
+=======
+    let newTodo=this.state.todo.filter((eachtodo,i) =>(index != i))
+
     
     this.setState({
       todo:newTodo
@@ -92,16 +95,6 @@ export default TodoComponent;
 //             {
             
 
-//                 this.state.todos.map((eachtodo)=>{
-//                    return <h2>{eachtodo}</h2>
-//                 })};
-//                <ButtonComponent1 text={'add todo'}/>
-//             </>
-//         )
-//     }
-
-// }
-// export default Todocompoment
 
 //                 this.state.todos.map((eachtodo)=>{
 //                    return <h2>{eachtodo}</h2>
@@ -113,4 +106,19 @@ export default TodoComponent;
 
 // }
 // export default Todocompoment
+
+//                 this.state.todos.map((eachtodo)=>{
+//                    return <h2>{eachtodo}</h2>
+//                 })};
+//                <ButtonComponent1 text={'add todo'}/>
+//             </>
+//         )
+//     }
+
+// }
+// export default Todocompoment
+=======
+}
+export default Todocompoment
+
 
