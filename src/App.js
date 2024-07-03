@@ -1,14 +1,12 @@
-import React from "react";
-// import Header1 from "./components/demo/demo";
-// import Accordion1 from "./components/Accordian/Accordian";
-import TodoComponent from "./components/todos/todos";
+import ProductListing from "./components/productListing/productListing";
+import { Stack } from "./navigation/stack"
+
 const App=()=>{
-  return (
-<div>
-   {/* <Header1/> */}
-   {/* <Accordion1/> */}
-   <TodoComponent/>
-    </div>
-  )
+   return (
+      <div>
+         <Stack/>
+         {/* <ProductListing/> */}
+      </div>
+   )
 }
 export default App;
