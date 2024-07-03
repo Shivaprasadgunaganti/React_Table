@@ -1,3 +1,5 @@
+// import { DNA } from "react-loader-spinner"
+
 import { DNA } from "react-loader-spinner"
 
 const CustomSpinner=()=>{

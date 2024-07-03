@@ -26,9 +26,9 @@ function Home() {
             return (
               <div>
                 <li key={each.id}></li>
-                <Link to={`/hyderabad/${each.title}/info`}>
-                  <ButtonComponent1 text={each.title} />
-                </Link>
+                <Link to={`/${each.category}/${each.id}/info`}>
+                  <ButtonComponent1 text={each.title}/>
+                  </Link>
               </div>
             );
           })}
