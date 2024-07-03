@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 
  function Invalid(){
-    const navigate=useNavigate()
+
+   const navigate=useNavigate()
    const returnBack=()=>{
    const isRedirect = true;
    if(isRedirect){

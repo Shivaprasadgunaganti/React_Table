@@ -6,7 +6,7 @@ function Contact() {
         <div>
             <Navbar/>
             <h2>contact</h2>
-            <Link to={'doctor'}>Doctors</Link>
+            <Link to={'doctor'}>Doctor</Link>
             <Link to={'engineer'}>Engineer</Link>
             <Outlet/>
         </div>

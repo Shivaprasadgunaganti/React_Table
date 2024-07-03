@@ -1,9 +1,13 @@
 import React from "react";
- function Productdetails(){
-    return (
-         <div>
-            <h2>Productdetails</h2>
-         </div>
-    )
- }
- export default Productdetails
+import { useParams } from "react-router";
+
+function Productdetails() {
+   const Param=useParams()
+   console.log(Param)
+  return (
+    <div>
+      <h2>Productdetails</h2>
+    </div>
+  );
+}
+export default Productdetails;

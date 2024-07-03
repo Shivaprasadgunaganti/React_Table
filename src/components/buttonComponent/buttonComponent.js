@@ -1,4 +1,4 @@
-
+// import styles from './button.module.css'
 const ButtonComponent1 = (prop) => {
   const {text,bgColor,onPress,width,height} =prop
     return (
@@ -9,19 +9,18 @@ const ButtonComponent1 = (prop) => {
      >
       {text}
      </button>
-    
+    )   
+}
+export default ButtonComponent1;
+// const ButtonComponent1 = (prop) => {
 
-import styles from './button.module.css'
-const ButtonComponent1 = (prop) => {
-
-  const {text,bgColor,onPress,width} =prop
-    return (
-     <button onClick={onPress}
-     className={styles.button}
-     style={{backgroundColor:bgColor,width:width}}>
-      {text}
-     </button>
-    );
-  };
-  export default ButtonComponent1;
-
+//   const {text,bgColor,onPress,width} =prop
+//     return (
+//      <button onClick={onPress}
+//      className={styles.button}
+//      style={{backgroundColor:bgColor,width:width}}>
+//       {text}
+//      </button>
+//     );
+//   };
+//   export default ButtonComponent1;
