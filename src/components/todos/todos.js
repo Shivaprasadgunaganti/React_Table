@@ -1,4 +1,28 @@
 
+import { Component } from "react"
+
+
+class TodoComponent extends Component {
+    state={
+        todo:['hello']
+    
+    }
+    render () {
+        return (
+        
+            <>{this.state.todo.map((eachtodo)=>{
+                return  <h3>{eachtodo}</h3>  
+        
+            })}
+            </>
+        )
+    }
+    
+}
+
+export default TodoComponent    
+
+
 import { Component } from "react";
 import ButtonComponent1 from "../Table/buttonComponet/buttonComponent";
 class TodoComponent extends Component {
@@ -23,7 +47,7 @@ class TodoComponent extends Component {
   todoDeleteHandler = (index) => {
 
     let newTodo=this.state.todo.filter((eachtodo,i) =>(index !== i))
-=======
+
     let newTodo=this.state.todo.filter((eachtodo,i) =>(index != i))
 
     
@@ -117,8 +141,6 @@ export default TodoComponent;
 
 // }
 // export default Todocompoment
-=======
+
 }
 export default Todocompoment
-
-

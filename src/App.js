@@ -1,4 +1,18 @@
 
+import ProductListing from "./components/productListing/productListing";
+import { Stack } from "./navigation/stack"
+
+const App=()=>{
+   return (
+      <div>
+         <Stack/>
+         {/* <ProductListing/> */}
+      </div>
+   )
+}
+export default App;
+
+
 
 // import ButtonComponent from "./components/button.js";
 // import { Heading1 } from "./components/Table/Table";
@@ -482,7 +496,7 @@ const App=()=>{
 }
 
 export default App;
-=======
+
 
 // import ButtonComponent from "./components/button.js";
 // import { Heading1 } from "./components/Table/Table";
@@ -723,5 +737,4 @@ const App=()=>{
   )
 }
 export default App;
-
 
