@@ -5,7 +5,7 @@ function Cards() {
   return (
     <Card style={{ width: '18rem' }}>
      
-      <img src={image} height={100} width={100}/>
+      <img src={image} height={100} width={100} alt='alter'/>
      
       <Card.Body>
         <Card.Title>Beatuiful image</Card.Title>

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 // import ButtonComponent from "./components/button.js";
 // import { Heading1 } from "./components/Table/Table";
@@ -239,3 +240,17 @@ const App=()=>{
 }
 export default App;
 
+=======
+import { Stack } from "react-bootstrap"
+import ProductListing from "./components/productListing/productListing"
+
+const App =()=>{
+   return (
+      <>
+      <ProductListing/>
+      <Stack/>
+      </>
+   )
+}
+export default App
+>>>>>>> Stashed changes

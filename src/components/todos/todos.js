@@ -1,4 +1,5 @@
 
+
 import { Component } from "react";
 import ButtonComponent1 from "../Table/buttonComponet/buttonComponent";
 class TodoComponent extends Component {
@@ -54,7 +55,7 @@ class TodoComponent extends Component {
 }
 
 export default TodoComponent;
-=======
+
 // import { Component } from "react"
 
 // class TodoComponent extends Component {
@@ -98,6 +99,18 @@ class Todocompoment extends Component {
         )
     }
 
+
 }
 export default Todocompoment
 
+                this.state.todos.map((eachtodo)=>{
+                   return <h2>{eachtodo}</h2>
+                })};
+               <ButtonComponent1 text={'add todo'}/>
+            </>
+        )
+    }
+
+
+}
+export default Todocompoment
