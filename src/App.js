@@ -1,10 +1,13 @@
-//
 
 // import ProductListing from "./components/productListing/productListing";
 // import UseEffectEx3 from "./components/useEffect/useEffectExample3";
 import Greetings from "./Greetings/Greetings";
 // import RecipeDataTask from "./recipeDataTask/recipeDataTask";
 // import TableData from "./recipeDataTask/tableData";
+
+import RecipeDataTask from "./recipeDataTask/recipeDataTask";
+import TableData from "./recipeDataTask/tableData";
+
 
 const App = () => {
   const names = ["shiva", "gnana", "raghu", "sasi"];
@@ -15,6 +18,7 @@ const App = () => {
     //   <Greetings name={names[2]}>How are gnana</Greetings>
     // </div>
     <div>
+
       {names.map((eachdata, index) => {
         return (
           <Greetings name={eachdata}>
@@ -29,6 +33,11 @@ const App = () => {
           
         )
       })}
+
+      <TableData />
+      <RecipeDataTask />
+     
+
     </div>
   );
 };
