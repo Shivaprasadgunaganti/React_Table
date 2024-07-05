@@ -1,5 +1,6 @@
 import { Component } from "react";
 import CustomSpinner from "../CustomSpinner/customSpinner";
+import axios from "axios";
 
 class ProductListing extends Component {
     state={
@@ -10,23 +11,31 @@ class ProductListing extends Component {
         console.log('componentDidmount')
         this.fetchData()
     }
-  fetchData = () => {
+  fetchData = async () => {
     this.setState({
         loading:true
     })
-    fetch("https://fakestoreapi.com/products")
-      .then((response) => response.json(response))
-      .then((response) => {
-         this.setState({
-            products:response,
-            loading:false
-         })
-      }
-    );
-  };
-  render() {
-    // console.log('render')
-    return (
+  
+    try{
+
+    const response = await axios.get('https://fakestoreapi.com/products')
+    if(response.status===200){
+       this.setState ({
+        products:response.data,
+        loading:false
+       })
+    }
+
+  } catch(err){
+    console.log(err)
+    this.setState({
+      error:'server is busy'
+    })
+  }
+}
+   render() {
+    console.log('render')
+      return (
       <>
         <h2>ProductListing</h2>
         {
@@ -46,6 +55,6 @@ class ProductListing extends Component {
         }
       </>
     );
-  }
+   }
 }
-export default ProductListing;
+export default ProductListing
