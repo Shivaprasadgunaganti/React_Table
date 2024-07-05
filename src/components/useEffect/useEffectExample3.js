@@ -1,19 +1,16 @@
 import React, { useEffect } from "react";
 
 function UseEffectEx3() {
+  // const {children} =prop
   useEffect(() => {
     window.addEventListener("mousemove", captureMouse);
-
-    // return () => {
-    //   // clean up , prevent leak
-
-    //   window.removeEventListener("mousemove", captureMouse);
-    // };
   }, []);
 
   const captureMouse = (event) => {
-    console.log(event.clientX, "X-AXIS");
-    console.log(event.clientY, "Y-AXIS");
+    console.log(event);
+    // console.log(event.clientX, "X-AXIS");
+    // console.log(event.clientY, "Y-AXIS");
+    // {children}
   };
 
   return <div>UseEffectEx3</div>;
