@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-// import { useState } from "react"
-
 const DateFunction = () =>{
     const [date1] = useState(new Date())
 
@@ -20,6 +18,9 @@ const DateFunction = () =>{
     )
 }
 export default DateFunction
+
+
+
 
 export const DataFunction = () => {
   const [num,setnum] = useState('');
