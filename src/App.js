@@ -1,10 +1,13 @@
-import DateFunction, { DataFunction } from "./Data/Data";
+import  { ListItems1, ListItems2 } from "./components/lists/lists";
+
 
 const App = () => {
   return (
    <div>
-     <DateFunction/>
-     <DataFunction/>
+   
+    <ListItems1/>
+    <ListItems2/>
+    
    </div>
   
   )
