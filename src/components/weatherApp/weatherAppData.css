@@ -2,15 +2,18 @@
   height: 300px;
   width: 500px;
   margin-left: 100px;
+  
+  color: rgb(217, 255, 0);
   background-size: cover;
   background-repeat: no-repeat;
 }
 button {
   display: block;
   margin-left: 50px;
-  margin-top: 30px;
+  margin-top: 30px; 
+
 }
-.card .form{
+.input{
     margin-left: 170px;
     padding-top: 100px;
 }

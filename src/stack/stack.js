@@ -13,12 +13,41 @@ const LazySetting = React.lazy(() => import("../Screen/Setting-screen"));
 export const ProfileWrapper = createContext();
 
 export function Stack() {
-  const [profileInfo, setProfileInfo] = useState({
-    name: "ram",
-    salary:30000
-  });
+  // const [profileInfo, setProfileInfo] = useState({
+  //   name: "ram",
+  //   salary:30000
+  // });
+  const [counter,setCounter]= useState(100)
+
+  //  const newName=(eachName)=>{
+  //   setProfileInfo({...ProfileWrapper,name:eachName})
+  //  }
+
+   const incrementCounter=()=>{
+    setCounter(counter+100)
+   }
+
+   const decrementCounter = ()=>{
+    if(counter>0)
+      setCounter(counter-100)
+   }
+
+   const updateValue = (x)=>{
+    setCounter(x)
+    // console.log(counter)
+   }
+
   return (
-    <ProfileWrapper.Provider value={profileInfo}>
+    <ProfileWrapper.Provider value={
+      {
+        // key:profileInfo,
+        // newName,
+        counter,
+        incrementCounter,
+        decrementCounter,
+        updateValue
+      }
+    }>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
