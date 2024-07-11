@@ -1,4 +1,5 @@
-export const Heading1=()=>{
+export const Table=()=>{
+    
     return <table>
         <tr>
             <th>S.No</th>
@@ -16,7 +17,7 @@ export const Heading1=()=>{
              <td>2</td>
             <td>Raghu</td>
             <td>5R</td>
-            <td>Bhodhan</td>
+            <td>Bodhan</td>
         </tr>
         <tr>
              <td>3</td>

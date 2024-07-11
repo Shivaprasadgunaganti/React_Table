@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Screen/Home-screen";
 import About from "../Screen/About-screen";
 import Contact from "../Screen/contact-screen";
-// import Setting from "../Screen/Setting-screen";
 import Invalid from "../Screen/invalid-screen";
 import Productdetails from "../Screen/product-details";
 import Doctor from "../Screen/doctor-screen";

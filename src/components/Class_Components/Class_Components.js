@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 import Cards from "../cards/Cards";
-// import { Data } from "../data/data";
-
-
 
 class ButtonComponent extends Component {
   state = {
@@ -28,7 +25,6 @@ class ButtonComponent extends Component {
         this.state.isSubscribed?
         <>
         <h2>congrats</h2>
-        {/* <Data/> */}
        <Cards/>
         </>
         :
