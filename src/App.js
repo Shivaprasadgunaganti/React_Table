@@ -1,12 +1,13 @@
-import  { ListItems1, ListItems2 } from "./components/lists/lists";
+
+import { UseReduceFun } from "./components/useReduce/useReduce";
+
 
 
 const App = () => {
   return (
    <div>
    
-    <ListItems1/>
-    <ListItems2/>
+     <UseReduceFun/>
     
    </div>
   

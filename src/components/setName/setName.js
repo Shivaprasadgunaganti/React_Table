@@ -44,17 +44,3 @@ function SetName() {
   );
 }
 export default SetName;
-
-// function SetName(){
-//     const [name,setName]=useState("mani")
-//     const handleClick=()=>{
-//         setName(prev=>(prev==="mani"?"mani":"siva"))
-//     }
-//     return (
-//         <div>
-//            <h2>{name}</h2>
-//            <button onClick={handleClick}>click for name change</button>
-//         </div>
-//     )
-// }
-// export default SetName
