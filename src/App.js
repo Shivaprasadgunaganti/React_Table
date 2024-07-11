@@ -1,19 +1,11 @@
-import Accordion1 from "./components/Accordian/Accordian";
-import  { ListItems1, ListItems2 } from "./components/lists/lists";
-import TodoComponent from "./components/todos/todos";
-
+import React from 'react'
 
 const App = () => {
   return (
-   <div>
-   
-    {/* <ListItems1/>
-    <ListItems2/> */}
-    {/* <TodoComponent/> */}
- 
-    
-   </div>
-  
+    <div>
+      
+    </div>
   )
-};
-export default App;
+}
+
+export default App
