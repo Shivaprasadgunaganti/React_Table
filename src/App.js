@@ -1,16 +1,11 @@
-
-import { UseReduceFun } from "./components/useReduce/useReduce";
-
-
+import React from 'react'
 
 const App = () => {
   return (
-   <div>
-   
-     <UseReduceFun/>
-    
-   </div>
-  
+    <div>
+      
+    </div>
   )
-};
-export default App;
+}
+
+export default App
