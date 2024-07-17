@@ -1,11 +1,18 @@
 import axios from "axios";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import "../weatherApp/weatherAppData.css";
 
 const WeatherApp = () => {
   const [city, setCity] = useState("");
+  // console.log(city)
   const [res1, setres1] = useState(0);
+  const cityvalue=useRef(null)
+  
 
+  // const mydata =()=>{
+  //     console.log(cityvalue.current.value)
+  //     setCity(cityvalue.current.value)
+  // }
   const fetchData = async () => {
     try {
       const response = await axios.get(
@@ -15,6 +22,8 @@ const WeatherApp = () => {
  
       let tempToKelvin = Math.trunc(kelvin - 273.15);
       setres1(tempToKelvin + "°c");
+      setCity(cityvalue.current.value)
+      // console.log(cityvalue)
     } catch (err) {
       const statusCode = err.response.data.cod;
       const msgData = err.response.data.message;
@@ -23,11 +32,9 @@ const WeatherApp = () => {
       }
     }
   };
-  const inputData = (e) => {
-    setCity(e.target.value);
-  };
+ 
   const temp = parseInt(res1);  
-  
+ 
   let img =
     temp === 0
       ? "https://www.shutterstock.com/image-photo/blue-sky-260nw-59299873.jpg"
@@ -35,8 +42,6 @@ const WeatherApp = () => {
       ? "https://www.stormshieldapp.com/static/images/section1.1-bg.jpg"
       : "https://img.freepik.com/premium-vector/sky-clouds-design-with-flat-cartoon-poster-flyers-postcards-web-banners_771576-58.jpg";
 
-      //https://www.flaticon.com/free-animated-icon/rain_16046895?term=rain&page=1&position=4&origin=tag&related_id=16046895
-      //https://www.stormshieldapp.com/static/images/section1.1-bg.jpg
   return (
     <div
       id="styling"
@@ -44,7 +49,7 @@ const WeatherApp = () => {
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="input">
-        <input type="text" onChange={inputData} value={city} />
+        <input type="text"   ref={cityvalue}/>
 
         <button type="submit" onClick={fetchData}>
           submit
